@@ -1,0 +1,14 @@
+root: true
+
+env:
+  browser: true
+
+extends:
+  "htmlacademy/es6"
+
+parser:
+  "babel-eslint"
+
+rules: {
+  "strict": 0
+}

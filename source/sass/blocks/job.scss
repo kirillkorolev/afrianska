@@ -1,0 +1,111 @@
+.job {
+  background-color: $blue;
+}
+
+.job__title {
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  margin: 0 0 33px;
+  color: $white;
+  padding-right: 15%;
+}
+
+.job__container {
+  background-color: $light-navy;
+
+  margin-right: 7%;
+  border-radius: 0 200px 0 0;
+  max-width: 1270px;
+  width: 93%;
+}
+
+.job__wrap {
+  padding: 91px 0 85px 16.77%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1073px;
+  width: 85%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.job__text-wrap {
+  max-width: 460px;
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.job__button {
+  @include reset-button;
+
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $blue;
+  color: $white;
+  letter-spacing: 0.04em;
+  padding: 15px;
+  margin-bottom: 8px;
+
+  position: relative;
+  bottom: 0;
+  transition-property: all;
+  transition-duration: 0.5s;
+  box-shadow: none;
+}
+
+.job__button:hover,
+.job__button:focus {
+  background-color: $navy;
+  bottom: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.job__button:active {
+  opacity: 0.7;
+  bottom: 0;
+  box-shadow: none;
+}
+
+.job__text {
+  color: $white;
+  opacity: 0.6;
+  margin: 0 0 16px;
+}
+
+@media (max-width: $mobile-width) {
+  .job__container {
+    margin-right: 20px;
+    width: 97.4%;
+    border-radius: 0 100px 0 0;
+  }
+
+  .job__wrap {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: flex-start;
+  }
+
+  .job__text-wrap {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .job__title {
+    padding-right: 0;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .job__button {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+}
